@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "firstName": "Marcin",
+      "lastName": "Nazwiskowy",
+      "email": "mail.marcina@onet.pl"
+    },
+    {
+      "id": 2,
+      "firstName": "jakies",
+      "lastName": "nazwisko",
+      "email": "niewiem.jakis@mail.xd"
+    },
+    {
+      "id": 3,
+      "firstName": "Michal",
+      "lastName": "Wiśniewski",
+      "email": "gwiazda.pop@wp.pl"
+    }
+  ]
+  
