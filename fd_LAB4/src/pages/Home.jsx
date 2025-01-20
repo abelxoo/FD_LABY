@@ -1,9 +1,9 @@
 import React from 'react';
-import './Home.css';  // Importuj plik CSS
+import './Home.css';
 
 const Home = () => {
   return (
-    <div className="home-container">  {/* Używaj poprawnej klasy CSS */}
+    <div className="home-container">
       <h1>Strona główna</h1>
       <p>Główna strona aplikacji</p>
     </div>

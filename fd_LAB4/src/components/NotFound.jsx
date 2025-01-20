@@ -10,6 +10,7 @@ const NotFound = () => {
         wróć na stronę główną
       </Link>
     </div>
+  
   );
 };
 

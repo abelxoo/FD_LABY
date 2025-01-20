@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Navbar as BootstrapNavbar, Nav, Container, Button } from 'react-bootstrap';
 
 const Navbar = ({ isLoggedIn, onLogout }) => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const is404Page = !['/login', '/', '/about', '/contact'].includes(location.pathname);
 
   const handleLogout = () => {
     onLogout();
@@ -19,7 +21,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {isLoggedIn && (
+            {(isLoggedIn || is404Page) && (
               <>
                 <Nav.Link as={Link} to="/">
                   Strona główna
@@ -33,6 +35,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
               </>
             )}
           </Nav>
+          
           {isLoggedIn && (
             <Button variant="outline-light" onClick={handleLogout}>
               Wyloguj się
