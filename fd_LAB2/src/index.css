@@ -1,0 +1,12 @@
+body {
+  margin: 20px;
+  font-family: Arial;
+}
+
+input, button {
+  margin: 5px;
+}
+
+li {
+  margin: 5px 0;
+}
